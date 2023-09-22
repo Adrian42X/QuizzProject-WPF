@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Player>
+    <Name>Adrian</Name>
+    <Score>10</Score>
+    <NrOfPlayedQuizzes>2</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>Player</Name>
+    <Score>0</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+</ArrayOfPlayer>
