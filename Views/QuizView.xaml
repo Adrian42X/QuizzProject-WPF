@@ -21,5 +21,6 @@
         </ItemsControl>
         <Button Content="Next Question" Command="{Binding NextCommand}" HorizontalAlignment="Left" Margin="663,292,0,0" VerticalAlignment="Top"/>
         <Button Content="Previous Question" Command="{Binding PreviousCommand}" HorizontalAlignment="Left" Margin="63,297,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="663,249,0,0" TextWrapping="Wrap" Text="{Binding QuestionNumber}" VerticalAlignment="Top" Height="27" Width="108"/>
     </Grid>
 </UserControl>

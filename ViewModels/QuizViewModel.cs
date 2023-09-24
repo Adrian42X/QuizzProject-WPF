@@ -3,6 +3,7 @@ using QuizzProject.Models;
 using QuizzProject.Stores;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
 
@@ -44,9 +45,13 @@ namespace QuizzProject.ViewModels
             }
         }
 
+        public string QuestionNumber => (index+1) + "/5";
+
         public ICommand NextCommand => new RelayCommand(execute =>
         {
             index++;
+            if (_quizService.questions.Count == index)
+                MessageBox.Show("This was the last question");
             _navigationStore.CurrentViewModel = new QuizViewModel(_quizService, _navigationStore);
         });
 

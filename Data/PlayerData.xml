@@ -40,4 +40,24 @@
     <Score>1</Score>
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
+  <Player>
+    <Name>reystyfguhi</Name>
+    <Score>0</Score>
+    <NrOfPlayedQuizzes>1</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>wfewf</Name>
+    <Score>0</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>tryfu</Name>
+    <Score>1</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>dgerger</Name>
+    <Score>0</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
 </ArrayOfPlayer>
