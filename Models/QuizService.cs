@@ -1,6 +1,7 @@
 ﻿using QuizzProject.Data;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace QuizzProject.Models
 {
@@ -10,7 +11,6 @@ namespace QuizzProject.Models
         public string selectedDifficulty;
         public string playerName = "Player";
         public ObservableCollection<Question> questions;
-        private static int index = 0;
         public int playerScore=0;
         public QuizService() {
             _dataManager = new DataManager();
@@ -21,30 +21,38 @@ namespace QuizzProject.Models
             this.questions=_dataManager.GetQuizQuestions(selectedDifficulty);
         }
 
-        public Question GetCurrentQuestion()
+        public Question GetQuestion(int id)
         {
-            if (index < 5)
-            {//sa verific mai intai daca s-a raspuns la intrebarea anterioara sau trimit rapunsu din vm cumva gen nr rasp corecte (score)
-                index++;
-                return this.questions[index-1];
-            }
-            return new Question();
+            if(id < this.questions.Count)
+                return this.questions[id];
+            else 
+                foreach(var qt in  this.questions)
+                {
+                    bool correctAnswer = true;
+                    foreach (var ans in qt.Answers)
+                    {
+                        if (ans.IsCorrect == false && ans.IsChecked == true || ans.IsCorrect==true && ans.IsChecked==false)
+                            correctAnswer = false;
+                    }
+                    if (correctAnswer)
+                        this.playerScore++;
+                }
+            return null;
         }
-        public Question GetPreviousQuestion() 
-        {
-            if (index >= 1)
-            {
-                index--;
-                return this.questions[index];
-            }
-            return new Question();
-        }
-
         public void NewQuiz()
         {
-            index = 0;
             playerScore = 0;
-            questions = new ObservableCollection<Question>();
+            questions=new ObservableCollection<Question>();     
+        }
+
+        public List<Player> GetAllPlayers()
+        {
+            return _dataManager.Players.ToList();
+        }
+
+        public void AddPlayerStats(string playerName,int score)
+        {
+            _dataManager.AddPlayerStats(new Player() { Name=playerName,Score=score});
         }
     }
 }

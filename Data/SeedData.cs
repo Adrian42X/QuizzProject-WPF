@@ -49,7 +49,8 @@ namespace QuizzProject.Data
                         var answer = new Answer
                         {
                             Text = $"Option {j}",
-                            IsCorrect = isCorrect
+                            IsCorrect = isCorrect,
+                            IsChecked = false
                         };
 
                         question.Answers.Add(answer);
@@ -62,13 +63,13 @@ namespace QuizzProject.Data
             players.Add(new Player() { Name = "Adrian", Score = 10, NrOfPlayedQuizzes = 2 });
             players.Add(new Player() { Name="Player",Score=0, NrOfPlayedQuizzes=0});
 
-            SerializePlayersToXml(players, "PlayerData.xml");
-            SerializeQuestionsToXml(questions, "QuizzData.xml");
+            SerializePlayersToXml(players);
+            SerializeQuestionsToXml(questions);
         }
 
-        static void SerializePlayersToXml(List<Player> questions, string fileName)
+        public static void SerializePlayersToXml(List<Player> players)
         {
-            using (var stream = new FileStream("C:/Users/adria/source/repos/QuizzProject/Data/" + fileName, FileMode.Create))
+            using (var stream = new FileStream("C:/Users/adria/source/repos/QuizzProject/Data/PlayerData.xml", FileMode.Create))
             {
                 var serializer = new XmlSerializer(typeof(List<Player>));
                 var settings = new XmlWriterSettings
@@ -78,13 +79,13 @@ namespace QuizzProject.Data
 
                 using (var writer = XmlWriter.Create(stream, settings))
                 {
-                    serializer.Serialize(writer, questions);
+                    serializer.Serialize(writer, players);
                 }
             }
         }
-        static void SerializeQuestionsToXml(List<Question> questions, string fileName)
+        public static void SerializeQuestionsToXml(List<Question> questions)
         {
-            using (var stream = new FileStream("C:/Users/adria/source/repos/QuizzProject/Data/" + fileName, FileMode.Create))
+            using (var stream = new FileStream("C:/Users/adria/source/repos/QuizzProject/Data/QuizzData.xml", FileMode.Create))
             {
                 var serializer = new XmlSerializer(typeof(List<Question>));
                 var settings = new XmlWriterSettings

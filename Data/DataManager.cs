@@ -66,12 +66,19 @@ namespace QuizzProject.Data
 
         public void AddPlayerStats(Player player)
         {
-            var newPlayer = this.Players.First(x => x.Name == player.Name);
+            var newPlayer = this.Players.FirstOrDefault(x => x.Name == player.Name);
             if (newPlayer == null)
+            {
                 this.Players.Add(player);
+                SeedData.SerializePlayersToXml(this.Players.ToList());
+            }
+            else
+            {
+                if (newPlayer.Score >= player.Score)
+                    newPlayer.Score = player.Score;
 
-            newPlayer.Score=player.Score;
-            newPlayer.NrOfPlayedQuizzes += 1;
+                newPlayer.NrOfPlayedQuizzes += 1;
+            }
         }
     }
 }

@@ -15,10 +15,9 @@
         <ComboBox HorizontalAlignment="Left" Margin="355,216,0,0" VerticalAlignment="Top" Width="120" 
                   SelectedValue="{Binding Quizdifficulty, Mode=TwoWay}"
                   SelectedValuePath="Content">
-            <ComboBoxItem>Easy</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">Easy</ComboBoxItem>
             <ComboBoxItem>Medium</ComboBoxItem>
             <ComboBoxItem>Hard</ComboBoxItem>
-            
         </ComboBox>
         <Button Command="{Binding StartCommand}" Content="Start Quiz" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Height="37" Width="152"/>
         <TextBlock HorizontalAlignment="Left" Margin="240,160,0,0" TextWrapping="Wrap" Text="Player name" VerticalAlignment="Top"/>

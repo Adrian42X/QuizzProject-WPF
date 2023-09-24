@@ -12,7 +12,6 @@ namespace QuizzProject.ViewModels
         private string _playername;
         private string _quizdifficulty="Easy";
         private QuizService _quizService;
-        private ICommand _startCommand;
 
         public StartViewModel(QuizService quizService,NavigationStore navigationStore)
         {
@@ -54,8 +53,6 @@ namespace QuizzProject.ViewModels
             }, 
             canExecute => (PlayerName != null && Quizdifficulty != null)
             );
-
-        
-        
+      
     }
 }

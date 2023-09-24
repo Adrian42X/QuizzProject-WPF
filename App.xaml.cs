@@ -1,4 +1,5 @@
-﻿using QuizzProject.Models;
+﻿using QuizzProject.Data;
+using QuizzProject.Models;
 using QuizzProject.Stores;
 using QuizzProject.ViewModels;
 using System.Windows;

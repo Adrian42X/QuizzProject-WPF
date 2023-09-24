@@ -10,16 +10,16 @@
              d:DesignHeight="450" d:DesignWidth="800"
              d:DataContext="{d:DesignInstance Type=vms:QuizViewModel}">
     <Grid>
-        <TextBlock Text="{Binding QuestionText}" FontSize="18" Margin="10" HorizontalAlignment="Center"/>
+        <TextBlock Text="{Binding QuestionText}" FontSize="25" Margin="0,10,0,370" HorizontalAlignment="Center" Width="615"/>
 
-        <ItemsControl ItemsSource="{Binding Answers}" Margin="218,83,218,225">
+        <ItemsControl ItemsSource="{Binding Answers}" Margin="235,113,218,10">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <RadioButton Content="{Binding Text}"/>
+                    <RadioButton Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" FontSize="20" HorizontalAlignment="Center"/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <Button Content="Next Question" Command="{Binding NextCommand}" HorizontalAlignment="Left" Margin="611,245,0,0" VerticalAlignment="Top"/>
-        <Button Content="Previous Question" HorizontalAlignment="Left" Margin="119,245,0,0" VerticalAlignment="Top"/>
+        <Button Content="Next Question" Command="{Binding NextCommand}" HorizontalAlignment="Left" Margin="663,292,0,0" VerticalAlignment="Top"/>
+        <Button Content="Previous Question" Command="{Binding PreviousCommand}" HorizontalAlignment="Left" Margin="63,297,0,0" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace QuizzProject.ViewModels
 {
@@ -18,16 +19,21 @@ namespace QuizzProject.ViewModels
         {
             _quizService = quizService;
             _navigationStore = navigationStore;
+            _quizService.AddPlayerStats(_quizService.playerName, _quizService.playerScore);
         }
         public string PlayerName => _quizService.playerName;
         public string Difficulty => _quizService.selectedDifficulty;
-        public string Score=> _quizService.playerScore.ToString() + "/5";
+        public string Score=> _quizService.playerScore.ToString() + "/5 Correct answers";
 
-        public RelayCommand NewQuizCommand => new RelayCommand(execute =>
+        public ICommand NewQuizCommand => new RelayCommand(execute =>
         {
             _quizService.NewQuiz();
             _navigationStore.CurrentViewModel = new StartViewModel(_quizService, _navigationStore);
         });
-    
+
+        public ICommand ShowPlayerStats => new RelayCommand(execute =>
+        {
+            _navigationStore.CurrentViewModel = new StatsViewModel(_quizService, _navigationStore);
+        });
     }
 }
