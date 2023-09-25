@@ -9,17 +9,22 @@
              d:DesignHeight="450" d:DesignWidth="800"
              d:DataContext="{d:DesignInstance Type=local:StartViewModel}">
     <Grid>
-        <Label FontSize="80" Margin="123,0,68,282">Quiz Application</Label>
-        <TextBox HorizontalAlignment="Center" Margin="0,155,0,0" TextWrapping="Wrap" Text="{Binding PlayerName}"  VerticalAlignment="Top" Width="150" Height="25"/>
-        <Label Content="Select quiz difficulty :" HorizontalAlignment="Left" Margin="228,214,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="355,216,0,0" VerticalAlignment="Top" Width="120" 
+
+        <Label FontSize="60" Margin="123,0,68,282" HorizontalAlignment="Center">Quiz Application</Label>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="144" Width="152">
+            <TextBlock TextWrapping="Wrap" Text="Player name : " Width="386"/>
+            <TextBox  TextWrapping="Wrap" Text="{Binding PlayerName}"  Width="150" Height="25"/>
+
+            <Label Content="Select quiz difficulty :" />
+            <ComboBox Width="120" 
                   SelectedValue="{Binding Quizdifficulty, Mode=TwoWay}"
                   SelectedValuePath="Content">
-            <ComboBoxItem IsSelected="True">Easy</ComboBoxItem>
-            <ComboBoxItem>Medium</ComboBoxItem>
-            <ComboBoxItem>Hard</ComboBoxItem>
-        </ComboBox>
-        <Button Command="{Binding StartCommand}" Content="Start Quiz" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Height="37" Width="152"/>
-        <TextBlock HorizontalAlignment="Left" Margin="240,160,0,0" TextWrapping="Wrap" Text="Player name" VerticalAlignment="Top"/>
+                <ComboBoxItem IsSelected="True" Content="Easy"/>
+                <ComboBoxItem Content="Medium"/>
+                <ComboBoxItem Content="Hard"/>
+            </ComboBox>
+        </StackPanel>
+        <Button Command="{Binding StartCommand}" Content="Start Quiz" HorizontalAlignment="Center" Margin="0,30,0,15" VerticalAlignment="Bottom" Height="37" Width="152"/>
     </Grid>
 </UserControl>

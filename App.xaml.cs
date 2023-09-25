@@ -15,6 +15,7 @@ namespace QuizzProject
         
         public App()
         {
+            //SeedData.Seed();
             _quizService = new QuizService();
         }
 

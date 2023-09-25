@@ -11,10 +11,14 @@
              d:DataContext="{d:DesignInstance Type=vms:FinishViewModel}">
     <Grid>
         <TextBlock FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top">RESULT</TextBlock>
-        <TextBlock FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Binding PlayerName}" Width="240" Margin="0,0,0,0"></TextBlock>
-        <TextBlock FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Center" Text="{Binding Difficulty}" Width="240" Margin="0,260,0,0"/>
-        <TextBlock FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Center" Text="{Binding Score}" Width="240" Margin="0,310,0,0"/>
-        <Button Margin="344,381,344,48" Command="{Binding NewQuizCommand}">New Quiz</Button>
-        <Button Command="{Binding ShowPlayerStats}" Margin="333,407,333,17">Stats</Button>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="222">
+            <TextBlock FontSize="30" Text="{Binding PlayerName}" />
+            <TextBlock FontSize="30" Text="{Binding Difficulty}" />
+            <TextBlock FontSize="30" Text="{Binding Score}" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30" Width="106">
+            <Button Command="{Binding NewQuizCommand}">New Quiz</Button>
+            <Button Command="{Binding ShowPlayerStats}">Stats</Button>
+        </StackPanel>
     </Grid>
 </UserControl>

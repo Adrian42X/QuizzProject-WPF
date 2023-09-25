@@ -74,7 +74,7 @@ namespace QuizzProject.Data
             }
             else
             {
-                if (newPlayer.Score >= player.Score)
+                if (player.Score >= newPlayer.Score)
                     newPlayer.Score = player.Score;
 
                 newPlayer.NrOfPlayedQuizzes += 1;

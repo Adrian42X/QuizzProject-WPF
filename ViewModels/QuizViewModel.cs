@@ -45,13 +45,20 @@ namespace QuizzProject.ViewModels
             }
         }
 
-        public string QuestionNumber => (index+1) + "/5";
+        public string QuestionNumber => (index+1) + "/5 Questions";
+        public string NextOrFinishButton
+        {
+            get
+            {
+                if(index+1==_quizService.questions.Count)
+                return "Finish";
 
+                return "Next";
+            }
+        }
         public ICommand NextCommand => new RelayCommand(execute =>
         {
             index++;
-            if (_quizService.questions.Count == index)
-                MessageBox.Show("This was the last question");
             _navigationStore.CurrentViewModel = new QuizViewModel(_quizService, _navigationStore);
         });
 

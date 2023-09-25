@@ -21,8 +21,8 @@ namespace QuizzProject.ViewModels
             _navigationStore = navigationStore;
             _quizService.AddPlayerStats(_quizService.playerName, _quizService.playerScore);
         }
-        public string PlayerName => _quizService.playerName;
-        public string Difficulty => _quizService.selectedDifficulty;
+        public string PlayerName => "Name ->"+_quizService.playerName;
+        public string Difficulty => "Difficulty ->"+_quizService.selectedDifficulty;
         public string Score=> _quizService.playerScore.ToString() + "/5 Correct answers";
 
         public ICommand NewQuizCommand => new RelayCommand(execute =>

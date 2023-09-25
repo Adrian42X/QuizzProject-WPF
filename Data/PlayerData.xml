@@ -2,8 +2,8 @@
 <ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Player>
     <Name>Adrian</Name>
-    <Score>10</Score>
-    <NrOfPlayedQuizzes>2</NrOfPlayedQuizzes>
+    <Score>0</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
   <Player>
     <Name>Player</Name>
@@ -11,52 +11,7 @@
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
   <Player>
-    <Name>qwrqwqwqwww</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>aaaaaaaaaa</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>aaaaaaaa</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>Fita</Name>
-    <Score>5</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>egergergerg</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>tytf</Name>
-    <Score>1</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>reystyfguhi</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>1</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>wfewf</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>tryfu</Name>
-    <Score>1</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>dgerger</Name>
+    <Name>fewfwe</Name>
     <Score>0</Score>
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>

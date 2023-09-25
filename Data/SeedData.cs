@@ -60,8 +60,8 @@ namespace QuizzProject.Data
                 }
 
             var players = new List<Player>();
-            players.Add(new Player() { Name = "Adrian", Score = 10, NrOfPlayedQuizzes = 2 });
-            players.Add(new Player() { Name="Player",Score=0, NrOfPlayedQuizzes=0});
+            players.Add(new Player() { Name = "Adrian"});
+            players.Add(new Player() { Name="Player"});
 
             SerializePlayersToXml(players);
             SerializeQuestionsToXml(questions);

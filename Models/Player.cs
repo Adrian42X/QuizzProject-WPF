@@ -4,7 +4,8 @@
     {
         public Player()
         {
-            Score = 1;
+            Score = 0;
+            NrOfPlayedQuizzes = 0;
         }
         public string? Name { get; set; }
         public int Score { get; set; }
