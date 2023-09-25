@@ -59,6 +59,10 @@ namespace QuizzProject.ViewModels
         public ICommand NextCommand => new RelayCommand(execute =>
         {
             index++;
+
+            if (_currentQuestion.Answers.FirstOrDefault(x => x.IsChecked == true) == null)
+                MessageBox.Show("You must pick an answer for this question");
+
             _navigationStore.CurrentViewModel = new QuizViewModel(_quizService, _navigationStore);
         });
 

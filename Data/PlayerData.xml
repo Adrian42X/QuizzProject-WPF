@@ -30,4 +30,9 @@
     <Score>0</Score>
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
+  <Player>
+    <Name>dw</Name>
+    <Score>1</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
 </ArrayOfPlayer>
