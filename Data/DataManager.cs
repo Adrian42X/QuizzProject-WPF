@@ -55,7 +55,7 @@ namespace QuizzProject.Data
         }
 
         public ObservableCollection<Question> GetQuizQuestions(string difficulty) {
-
+            GetAllQuestion();
             var quizQuestion= this.Questions.Where(x => x.Difficulty == difficulty).ToList(); 
             
             var random=new Random();

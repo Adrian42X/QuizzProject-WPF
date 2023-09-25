@@ -23,26 +23,29 @@ namespace QuizzProject.Models
 
         public Question GetQuestion(int id)
         {
-            if(id < this.questions.Count)
+            if (id < this.questions.Count)
                 return this.questions[id];
-            else 
-                foreach(var qt in  this.questions)
+            else
+            {
+                foreach (var qt in this.questions)
                 {
                     bool correctAnswer = true;
                     foreach (var ans in qt.Answers)
                     {
-                        if (ans.IsCorrect == false && ans.IsChecked == true || ans.IsCorrect==true && ans.IsChecked==false)
+                        if (ans.IsCorrect == false && ans.IsChecked == true || ans.IsCorrect == true && ans.IsChecked == false)
                             correctAnswer = false;
                     }
                     if (correctAnswer)
                         this.playerScore++;
                 }
-            return null;
+                return null;
+            }
         }
+
         public void NewQuiz()
         {
-            playerScore = 0;
-            questions=new ObservableCollection<Question>();     
+            this.playerScore = 0;
+            this.questions.Clear();
         }
 
         public List<Player> GetAllPlayers()

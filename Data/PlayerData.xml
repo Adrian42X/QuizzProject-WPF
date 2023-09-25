@@ -15,4 +15,19 @@
     <Score>0</Score>
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
+  <Player>
+    <Name>NIMIc</Name>
+    <Score>3</Score>
+    <NrOfPlayedQuizzes>1</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>Petre</Name>
+    <Score>2</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>Adi</Name>
+    <Score>0</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
 </ArrayOfPlayer>
