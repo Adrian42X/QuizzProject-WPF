@@ -50,7 +50,6 @@ namespace QuizzProject.Data
                         {
                             Text = $"Option {j}",
                             IsCorrect = isCorrect,
-                            IsChecked = false
                         };
 
                         question.Answers.Add(answer);

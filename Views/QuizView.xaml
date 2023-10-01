@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:QuizzProject.Views"
              xmlns:vms="clr-namespace:QuizzProject.ViewModels"
              mc:Ignorable="d"
              Background="#ffe099"
@@ -11,15 +10,32 @@
              d:DataContext="{d:DesignInstance Type=vms:QuizViewModel}">
     <Grid>
         <TextBlock Text="{Binding QuestionText}" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,0"/>
-
-        <ItemsControl ItemsSource="{Binding Answers}" VerticalAlignment="Center" Margin="10,60,10,10">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <RadioButton Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" FontSize="20" HorizontalAlignment="Center"/>
+        
+        <ItemsControl ItemsSource="{Binding AnswersToCheck}" VerticalAlignment="Center" Margin="10,60,10,10">
+            <ItemsControl.Resources>
+                
+                <DataTemplate x:Key="multipleAnswersTemplate">
+                    <RadioButton Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" GroupName="AnswerGroup" FontSize="20" HorizontalAlignment="Center"/>
                 </DataTemplate>
-            </ItemsControl.ItemTemplate>
+                <DataTemplate x:Key="singleAnswerTemplate">
+                    <CheckBox Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" FontSize="20" HorizontalAlignment="Center"/>
+                </DataTemplate>
+            </ItemsControl.Resources>
+            <ItemsControl.Style>
+                <Style TargetType="ItemsControl">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsMultipleAnswer}" Value="false">
+                            <Setter Property="ItemTemplate" Value="{StaticResource multipleAnswersTemplate}"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsMultipleAnswer}" Value="true">
+                            <Setter Property="ItemTemplate" Value="{StaticResource singleAnswerTemplate}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ItemsControl.Style>
         </ItemsControl>
-
+        
+        
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,10,10">
             <Button Content="Previous Question" Command="{Binding PreviousCommand}" Margin="10,0"/>
             <Button Content="{Binding NextOrFinishButton}" Command="{Binding NextCommand}" Margin="10,0"/>

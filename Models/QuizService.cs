@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security.Policy;
 
 namespace QuizzProject.Models
 {
@@ -12,6 +13,7 @@ namespace QuizzProject.Models
         public string playerName = "Player";
         public ObservableCollection<Question> questions;
         public int playerScore=0;
+        public List<bool> correctQuestions;
         public QuizService() {
             _dataManager = new DataManager();
             questions = new ObservableCollection<Question>();
@@ -19,25 +21,27 @@ namespace QuizzProject.Models
         public void StartQuizz() {
             
             this.questions=_dataManager.GetQuizQuestions(selectedDifficulty);
+            this.correctQuestions = new List<bool> { false,false,false,false,false};
         }
 
+        public void CheckQuestionAnswer(int qid, List<bool> answers)
+        {
+            var ok = true;
+            for(int i = 0; i < this.questions[qid].Answers.Count; i++)
+            {
+                if (answers[i] != this.questions[qid].Answers[i].IsCorrect)
+                    ok = false;
+            }
+
+            this.correctQuestions[qid] = ok;
+        }
         public Question GetQuestion(int id)
         {
             if (id < this.questions.Count)
                 return this.questions[id];
             else
             {
-                foreach (var qt in this.questions)
-                {
-                    bool correctAnswer = true;
-                    foreach (var ans in qt.Answers)
-                    {
-                        if (ans.IsCorrect == false && ans.IsChecked == true || ans.IsCorrect == true && ans.IsChecked == false)
-                            correctAnswer = false;
-                    }
-                    if (correctAnswer)
-                        this.playerScore++;
-                }
+                this.playerScore=this.correctQuestions.Where(x=>x==true).Count();
                 return null;
             }
         }

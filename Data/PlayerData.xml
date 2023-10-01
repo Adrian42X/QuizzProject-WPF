@@ -11,28 +11,18 @@
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
   <Player>
-    <Name>fewfwe</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>NIMIc</Name>
+    <Name>res</Name>
     <Score>3</Score>
-    <NrOfPlayedQuizzes>1</NrOfPlayedQuizzes>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
   <Player>
-    <Name>Petre</Name>
+    <Name>tfyguh</Name>
+    <Score>3</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>tyj</Name>
     <Score>2</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>Adi</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>dw</Name>
-    <Score>1</Score>
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
 </ArrayOfPlayer>

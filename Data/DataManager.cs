@@ -26,13 +26,17 @@ namespace QuizzProject.Data
         public void GetAllQuestion()
         {
             var filePath = "C:/Users/adria/source/repos/QuizzProject/Data/QuizzData.xml";
-            if (File.Exists(filePath))
+            try
             {
                 using (var stream = new FileStream(filePath, FileMode.Open))
                 {
                     var serializer = new XmlSerializer(typeof(ObservableCollection<Question>));
                     this.Questions = (ObservableCollection<Question>)serializer.Deserialize(stream);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error occured when deserializing data: {ex.Message}");
             }
 
             if (this.Questions.Count == null)
