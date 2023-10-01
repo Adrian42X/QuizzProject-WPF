@@ -19,49 +19,32 @@ namespace QuizzProject.Data
         public DataManager() { 
             Questions = new ObservableCollection<Question>();
             Players = new ObservableCollection<Player>();
-            GetAllQuestion();
-            GetAllPlayers();
         }
 
-        public void GetAllQuestion()
+        public void GetAllData<T>(string filePath,ref ObservableCollection<T> collection)
         {
-            var filePath = "C:/Users/adria/source/repos/QuizzProject/Data/QuizzData.xml";
-            try
-            {
-                using (var stream = new FileStream(filePath, FileMode.Open))
+                try
                 {
-                    var serializer = new XmlSerializer(typeof(ObservableCollection<Question>));
-                    Questions = (ObservableCollection<Question>)serializer.Deserialize(stream);
+                    using (var stream = new FileStream(filePath, FileMode.Open))
+                    {
+                        var serializer = new XmlSerializer(typeof(ObservableCollection<T>));
+                        collection = (ObservableCollection<T>)serializer.Deserialize(stream);
+                    }
                 }
-            }
-            catch (FileNotFoundException ex)
-            {
-                MessageBox.Show($"File not found: {ex.Message}");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error occured when deserializing data: {ex.Message}");
-            }
-        }
-
-        public void GetAllPlayers() {
-            var filePath = "C:/Users/adria/source/repos/QuizzProject/Data/PlayerData.xml";
-            if (File.Exists(filePath))
-            {
-                using (var stream = new FileStream(filePath, FileMode.Open))
+                catch (FileNotFoundException ex)
                 {
-                    var serializer = new XmlSerializer(typeof(ObservableCollection<Player>));
-                    Players = (ObservableCollection<Player>)serializer.Deserialize(stream);
+                    MessageBox.Show($"File not found: {ex.Message}");
                 }
-            }
-
-            if (Players.Count == null)
-                MessageBox.Show("Cannot find players in database");
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error occurred when deserializing data: {ex.Message}");
+                }
         }
 
         public ObservableCollection<Question> GetQuizQuestions(string difficulty) {
-            GetAllQuestion();
-            var quizQuestion= this.Questions.Where(x => x.Difficulty == difficulty).ToList(); 
+            GetAllData("C:/Users/adria/source/repos/QuizzProject/Dat/QuizzData.xml",ref Questions);
+
+            var quizQuestion= Questions.Where(x => x.Difficulty == difficulty).ToList(); 
             
             var random=new Random();
             var shuffledQuestions=quizQuestion.OrderBy(x => random.Next());
@@ -71,11 +54,13 @@ namespace QuizzProject.Data
 
         public void AddPlayerStats(Player player)
         {
-            var newPlayer = this.Players.FirstOrDefault(x => x.Name == player.Name);
+            GetAllData("C:/Users/adria/source/repos/QuizzProject/Data/PlayerData.xml",ref Players);
+
+            var newPlayer = Players.FirstOrDefault(x => x.Name == player.Name);
             if (newPlayer == null)
             {
-                this.Players.Add(player);
-                SeedData.SerializePlayersToXml(this.Players.ToList());
+                Players.Add(player);
+                SeedData.SerializePlayersToXml(Players.ToList());
             }
             else
             {

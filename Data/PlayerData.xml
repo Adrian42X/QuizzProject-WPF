@@ -1,33 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Player>
-    <Name>Adrian</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>Player</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>res</Name>
-    <Score>3</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>tfyguh</Name>
-    <Score>3</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>tyj</Name>
-    <Score>2</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
     <Name>34r</Name>
+    <Score>0</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>dwq</Name>
     <Score>2</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>wef</Name>
+    <Score>1</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>Adi</Name>
+    <Score>4</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
+  <Player>
+    <Name>rege</Name>
+    <Score>0</Score>
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
 </ArrayOfPlayer>
