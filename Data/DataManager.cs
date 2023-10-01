@@ -31,16 +31,17 @@ namespace QuizzProject.Data
                 using (var stream = new FileStream(filePath, FileMode.Open))
                 {
                     var serializer = new XmlSerializer(typeof(ObservableCollection<Question>));
-                    this.Questions = (ObservableCollection<Question>)serializer.Deserialize(stream);
+                    Questions = (ObservableCollection<Question>)serializer.Deserialize(stream);
                 }
+            }
+            catch (FileNotFoundException ex)
+            {
+                MessageBox.Show($"File not found: {ex.Message}");
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error occured when deserializing data: {ex.Message}");
             }
-
-            if (this.Questions.Count == null)
-                MessageBox.Show("Cannot find questions in database");
         }
 
         public void GetAllPlayers() {

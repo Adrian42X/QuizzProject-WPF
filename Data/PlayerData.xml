@@ -25,4 +25,9 @@
     <Score>2</Score>
     <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
   </Player>
+  <Player>
+    <Name>34r</Name>
+    <Score>2</Score>
+    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
+  </Player>
 </ArrayOfPlayer>
