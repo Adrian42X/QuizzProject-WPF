@@ -19,7 +19,7 @@ namespace QuizzProject.ViewModels
         {
             _quizService = quizService;
             _navigationStore = navigationStore;
-            _quizService.AddPlayerStats(_quizService.playerName, _quizService.playerScore);
+            _quizService.AddPlayerStats();
         }
         public string PlayerName => "Name ->"+_quizService.playerName;
         public string Difficulty => "Difficulty ->"+_quizService.selectedDifficulty;

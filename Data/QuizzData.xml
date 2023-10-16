@@ -1,663 +1,243 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Question>
-    <Text>Question 1?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 1?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3 correct" IsCorrect="true" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 2?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 2?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2 correct" IsCorrect="true" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 3?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 3?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3 correct" IsCorrect="true" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 4?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 4?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="false" />
+      <R Text="Option 2 correct" IsCorrect="true" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4 correct" IsCorrect="true" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 5?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 5?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 6?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 6?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 7?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 7?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3 correct" IsCorrect="true" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 8?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 8?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 9?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 9?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 10?</Text>
-    <Difficulty>Easy</Difficulty>
+  <Question Text="Question 10?" Difficulty="Easy">
     <Answers>
-      <Answer>
-        <Text>Option 1 correct</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 1?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 1?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4 correct" IsCorrect="true" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 2?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 2?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3 correct" IsCorrect="true" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 3?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 3?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 4?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 4?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2 correct" IsCorrect="true" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 5?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 5?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2 correct" IsCorrect="true" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 6?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 6?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3 correct" IsCorrect="true" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 7?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 7?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 8?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 8?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 9?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 9?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 10?</Text>
-    <Difficulty>Medium</Difficulty>
+  <Question Text="Question 10?" Difficulty="Medium">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1 correct" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 1?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 1?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 2?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 2?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 3?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 3?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 4?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 4?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 5?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 5?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 6?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 6?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 7?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 7?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 8?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 8?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 9?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 9?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
-  <Question>
-    <Text>Question 10?</Text>
-    <Difficulty>Hard</Difficulty>
+  <Question Text="Question 10?" Difficulty="Hard">
     <Answers>
-      <Answer>
-        <Text>Option 1</Text>
-        <IsCorrect>true</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 2</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 3</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
-      <Answer>
-        <Text>Option 4</Text>
-        <IsCorrect>false</IsCorrect>
-      </Answer>
+      <R Text="Option 1" IsCorrect="true" />
+      <R Text="Option 2" IsCorrect="false" />
+      <R Text="Option 3" IsCorrect="false" />
+      <R Text="Option 4" IsCorrect="false" />
     </Answers>
   </Question>
 </ArrayOfQuestion>

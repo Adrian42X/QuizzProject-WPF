@@ -42,7 +42,7 @@ namespace QuizzProject.Data
         }
 
         public ObservableCollection<Question> GetQuizQuestions(string difficulty) {
-            GetAllData("C:/Users/adria/source/repos/QuizzProject/Dat/QuizzData.xml",ref Questions);
+            GetAllData("C:/Users/adria/source/repos/QuizzProject/Data/QuizzData.xml",ref Questions);
 
             var quizQuestion= Questions.Where(x => x.Difficulty == difficulty).ToList(); 
             
@@ -60,7 +60,6 @@ namespace QuizzProject.Data
             if (newPlayer == null)
             {
                 Players.Add(player);
-                SeedData.SerializePlayersToXml(Players.ToList());
             }
             else
             {
@@ -69,6 +68,8 @@ namespace QuizzProject.Data
 
                 newPlayer.NrOfPlayedQuizzes += 1;
             }
+
+            SeedData.SerializePlayersToXml(Players.ToList());
         }
     }
 }

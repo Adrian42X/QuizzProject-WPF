@@ -1,28 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Player>
-    <Name>34r</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>dwq</Name>
-    <Score>2</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>wef</Name>
-    <Score>1</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>Adi</Name>
-    <Score>4</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
-  <Player>
-    <Name>rege</Name>
-    <Score>0</Score>
-    <NrOfPlayedQuizzes>0</NrOfPlayedQuizzes>
-  </Player>
+  <Player Name="Adrian" Score="0" NrOfPlayedQuizzes="0" />
+  <Player Name="Player" Score="0" NrOfPlayedQuizzes="0" />
+  <Player Name="qwd" Score="3" NrOfPlayedQuizzes="2" />
+  <Player Name="rege" Score="4" NrOfPlayedQuizzes="1" />
+  <Player Name="CINEVA" Score="4" NrOfPlayedQuizzes="0" />
+  <Player Name="REGE" Score="5" NrOfPlayedQuizzes="0" />
+  <Player Name="qwdwww" Score="0" NrOfPlayedQuizzes="1" />
+  <Player Name="qwdwqdqwd" Score="0" NrOfPlayedQuizzes="1" />
+  <Player Name="qq" Score="0" NrOfPlayedQuizzes="1" />
 </ArrayOfPlayer>

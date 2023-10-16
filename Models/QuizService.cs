@@ -30,7 +30,10 @@ namespace QuizzProject.Models
             for(int i = 0; i < this.questions[qid].Answers.Count; i++)
             {
                 if (answers[i] != this.questions[qid].Answers[i].IsCorrect)
+                { 
                     ok = false;
+                    break;
+                }
             }
 
             this.correctQuestions[qid] = ok;
@@ -57,9 +60,9 @@ namespace QuizzProject.Models
             return _dataManager.Players.ToList();
         }
 
-        public void AddPlayerStats(string playerName,int score)
+        public void AddPlayerStats()
         {
-            _dataManager.AddPlayerStats(new Player() { Name=playerName,Score=score});
+            _dataManager.AddPlayerStats(new Player() { Name=playerName,Score=playerScore});
         }
     }
 }

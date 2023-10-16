@@ -11,14 +11,13 @@
     <Grid>
         <TextBlock Text="{Binding QuestionText}" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,0"/>
         
-        <ItemsControl ItemsSource="{Binding AnswersToCheck}" VerticalAlignment="Center" Margin="10,60,10,10">
+        <ItemsControl ItemsSource="{Binding AnswersToCheck}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,60,10,10">
             <ItemsControl.Resources>
-                
                 <DataTemplate x:Key="multipleAnswersTemplate">
-                    <RadioButton Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" GroupName="AnswerGroup" FontSize="20" HorizontalAlignment="Center"/>
+                    <RadioButton Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" GroupName="AnswerGroup" FontSize="20" HorizontalAlignment="Left"/>
                 </DataTemplate>
                 <DataTemplate x:Key="singleAnswerTemplate">
-                    <CheckBox Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" FontSize="20" HorizontalAlignment="Center"/>
+                    <CheckBox Content="{Binding Text}" IsChecked="{Binding IsChecked, Mode=TwoWay}" FontSize="20" HorizontalAlignment="Left"/>
                 </DataTemplate>
             </ItemsControl.Resources>
             <ItemsControl.Style>
